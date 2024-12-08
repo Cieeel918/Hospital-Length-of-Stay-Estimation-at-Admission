@@ -11,7 +11,7 @@ library(DescTools)
 library(gridExtra)
 
 #----------------------------------------Data Cleaning--------------------------------------
-dt <- fread('/Users/mochenyi/Desktop/ntu/Analytics Strategy-AN6003/AY24 CBA/INF002v4.csv',na.strings = c("", "NA"),stringsAsFactors = T)
+dt <- fread('INF002v4.csv',na.strings = c("", "NA"),stringsAsFactors = T)
 dt[dt == ""] <- NA  
 sum(is.na(dt))
 
